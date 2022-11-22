@@ -9,15 +9,16 @@ while (numberDayOnWeek < 1 || numberDayOnWeek > 7)
 }    
 if(numberDayOnWeek == 1)
     Console.Write("Этот день недели: Понедельник");
-if(numberDayOnWeek == 2)
+else if(numberDayOnWeek == 2)
     Console.Write("Этот день недели: Вторник");
-if(numberDayOnWeek == 3)
+else if(numberDayOnWeek == 3)
     Console.Write("Этот день недели: Среда");
-if(numberDayOnWeek == 4)
+else if(numberDayOnWeek == 4)
     Console.Write("Этот день недели: Четверг");
-if(numberDayOnWeek == 5)
+else if(numberDayOnWeek == 5)
     Console.Write("Этот день недели: Пятница");
-if(numberDayOnWeek == 6)
+else if(numberDayOnWeek == 6)
     Console.Write("Этот день недели: Суббота");
-if(numberDayOnWeek == 7)
+else
     Console.Write("Этот день недели: Воскресенье"); 
+Console.WriteLine();
