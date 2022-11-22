@@ -13,6 +13,7 @@ int number1 = int.Parse(Console.ReadLine());
 
 // Console.Write("Введённые числа не равны? ");
 // Console.Write((number1 != number2));
+
 // Console.WriteLine(number1 * 2);
 // Console.WriteLine(number2 * 3);
 
@@ -26,7 +27,7 @@ int number1 = int.Parse(Console.ReadLine());
 // Коньюнкция (логическое умножение) && матеиатическая запись ^
 // Дизъюнкция (логическое сложение) || матеиатическая запись v
 
-// Чтобы закоментировать выбранную область нужно нажать ctrl + /
+// Чтобы закоментировать выбранную область нужно нажать ctrl + / или обрамить /* тру-ля-ля */
 /*
 Console.WriteLine();
 Console.Write("Кратно ли введённое число одновременно 2 и 3 ? ");
@@ -35,3 +36,6 @@ if(number1 % 2 == 0 && number1 % 3 == 0)
 else
     Console.WriteLine("No");
 */
+
+Console.Write("Квадрат введённого числа равен: ");
+Console.WriteLine(number1 * number1);
