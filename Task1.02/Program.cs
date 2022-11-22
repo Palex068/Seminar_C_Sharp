@@ -1,0 +1,19 @@
+﻿Console.Clear();
+
+Console.Write("Введите 1-е число: ");
+int Number1 = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите 2-е число: ");
+int Number2 = Convert.ToInt32(Console.ReadLine());
+
+if (Number2 > Number1)
+{
+    Console.WriteLine($"Максимальное число равно: {Number2}");
+    Console.Write($"Минимальное число равно: {Number1}");
+}
+else
+{
+    Console.WriteLine($"Максимальное число равно: {Number1}");
+    Console.Write($"Минимальное число равно: {Number2}");
+}
+
+Console.WriteLine();
