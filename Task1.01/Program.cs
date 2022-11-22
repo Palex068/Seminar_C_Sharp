@@ -26,13 +26,11 @@ int number1 = int.Parse(Console.ReadLine());
 // Коньюнкция (логическое умножение) && матеиатическая запись ^
 // Дизъюнкция (логическое сложение) || матеиатическая запись v
 
+// Чтобы закоментировать выбранную область нужно нажать ctrl + /
+
 Console.WriteLine();
 Console.Write("Кратно ли введённое число одновременно 2 и 3 ? ");
 if(number1 % 2 == 0 && number1 % 3 == 0)
-{
-Console.WriteLine("Yes");
-}
+    Console.WriteLine("Yes");
 else
-{
-Console.WriteLine("No");
-}
+    Console.WriteLine("No");
