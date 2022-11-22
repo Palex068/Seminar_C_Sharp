@@ -6,14 +6,9 @@ Console.Write("Введите 2-е число: ");
 int Number2 = Convert.ToInt32(Console.ReadLine());
 
 if (Number2 > Number1)
-{
-    Console.WriteLine($"Максимальное число равно: {Number2}");
-    Console.Write($"Минимальное число равно: {Number1}");
-}
+    Console.WriteLine($"Максимальное число равно: {Number2}\nМинимальное число равно: {Number1}");
+    
 else
-{
-    Console.WriteLine($"Максимальное число равно: {Number1}");
-    Console.Write($"Минимальное число равно: {Number2}");
-}
-
+    Console.WriteLine($"Максимальное число равно: {Number1}\nМинимальное число равно: {Number2}");
+    
 Console.WriteLine();
