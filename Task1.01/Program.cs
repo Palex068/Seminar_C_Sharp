@@ -1,9 +1,13 @@
 ﻿Console.Clear();
 // Console.WriteLine("Hello, World!");
 
-Console.Write("Введите число: ");
+Console.Write("Введите первое число: ");
 // Способ ввода данных 1
 int number1 = int.Parse(Console.ReadLine());
+
+Console.Write("Введите второе число: ");
+// Способ ввода данных 1
+int number2 = int.Parse(Console.ReadLine());
 
 // Console.Write("Введённое число больше 10? ");
 // Console.Write(Convert.ToInt32(number1 > 10));
@@ -28,14 +32,11 @@ int number1 = int.Parse(Console.ReadLine());
 // Дизъюнкция (логическое сложение) || матеиатическая запись v
 
 // Чтобы закоментировать выбранную область нужно нажать ctrl + / или обрамить /* тру-ля-ля */
-/*
-Console.WriteLine();
-Console.Write("Кратно ли введённое число одновременно 2 и 3 ? ");
-if(number1 % 2 == 0 && number1 % 3 == 0)
-    Console.WriteLine("Yes");
-else
-    Console.WriteLine("No");
-*/
 
-Console.Write("Квадрат введённого числа равен: ");
-Console.WriteLine(number1 * number1);
+Console.WriteLine();
+Console.Write("Является ли первое число квадратом второго? ");
+
+if(number2 * number2 == number1)
+    Console.WriteLine("Да");
+else
+    Console.WriteLine("Нет");
