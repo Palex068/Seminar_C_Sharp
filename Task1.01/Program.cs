@@ -5,12 +5,14 @@ Console.Write("Введите число: ");
 // Способ ввода данных 1
 int number1 = int.Parse(Console.ReadLine());
 
-Console.Write("Введённое число больше 10? ");
-Console.Write(Convert.ToInt32(number1 > 10));
-// Console.Write("Введите второе число: ");
+// Console.Write("Введённое число больше 10? ");
+// Console.Write(Convert.ToInt32(number1 > 10));
+Console.Write("Введите второе число: ");
 // Способ ввода данных 2
-// int number2 = Convert.ToInt32(Console.ReadLine());
+int number2 = Convert.ToInt32(Console.ReadLine());
 
+Console.Write("Введённые числа не равны? ");
+Console.Write((number1 != number2));
 // Console.WriteLine(number1 * 2);
 // Console.WriteLine(number2 * 3);
 
