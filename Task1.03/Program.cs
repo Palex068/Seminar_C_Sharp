@@ -10,6 +10,7 @@ Console.Clear();
 
 Console.Write("Введите порядковый номер дня недели: ");
 int numberDayOnWeek = Convert.ToInt32(Console.ReadLine());
+
 while (numberDayOnWeek < 1 || numberDayOnWeek > 7)
 {
     Console.Write("Вы ошиблись!\nВведите порядковый номер дня недели: ");
