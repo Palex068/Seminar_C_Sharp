@@ -7,7 +7,7 @@
 
 Console.Clear();
 
-int randomNumber = Convert.ToInt32(new Random().Next(100, 1000));   // Генерируем случайное число от 100 до 399
+int randomNumber = Convert.ToInt32(new Random().Next(100, 1000));   // Генерируем случайное число от 100 до 999
 
 System.Console.WriteLine($"Случайное число: {randomNumber}");       // Выводим на экран сгенерированное число
 
@@ -31,3 +31,11 @@ System.Console.WriteLine();                                         // Разд�
 int Number = N3 * 10 + N1;                                          // Собираем число - ответ
 
 System.Console.WriteLine($"{randomNumber} -> {Number}");            // Выводим ответ на печать
+
+System.Console.WriteLine();                                         // Разделительная строка
+
+System.Console.WriteLine("Второе решение");                                                         // Второе решение
+
+System.Console.WriteLine();                                                                         // Разделительная строка
+
+System.Console.WriteLine($"{randomNumber} -> {(randomNumber / 100) * 10 + randomNumber % 10}");     // Собираем ответ
