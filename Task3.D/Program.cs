@@ -39,3 +39,13 @@ if (resultSum < array[n - 1] + array[0] + array[1])
         resultSum = array[n - 1] + array[0] + array[1];
     
 Console.WriteLine(resultSum);
+
+// Разобрать Char!!!
+/*
+Console.Clear();
+Console.Write("Введите число: ");
+string? n = Console.ReadLine();         // Знак ? - убирает предупреждение о нулевом значении
+
+Console.WriteLine(int.Parse(n[0].ToString()) * 2);
+*/
+
