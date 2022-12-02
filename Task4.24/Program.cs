@@ -7,14 +7,14 @@
 Console.Clear();
 
 Console.Write("Введите число: ");                                 // Приглашение для ввода числа А
-Console.Write();                                                  // Строка разделитель
-
 int number = Convert.ToInt32(Console.ReadLine());                 // Объявили переменную, вводим и конвертируем в Int32
+
+Console.WriteLine();                                              // Строка разделитель
 int result = 0;                                                   // Объявили переменную - ответ
 
 for (int i = 1; i < number + 1; i++)                              // Цикл for от 1 до А с шагом 1
 {
-    result += i;                                                  // Увеличиваем result на i
+    result +=i;                                                  // Увеличиваем result на i
 }
 
 Console.WriteLine($"Сумма чисел от 1 до {number} = {result}");    // Выводим результат
