@@ -23,6 +23,22 @@ for (int i = 0; i < array.Length; i++)
 
 Console.WriteLine($"\n[{string.Join("\t", array)}]");
 
-Console.Write("Введите значение для сдвига элементов массива: ");
+Console.Write("\nВведите значение для сдвига элементов массива: ");
 int k = Convert.ToInt32(Console.ReadLine());
 
+if(Math.Abs(k) > n) k = k % n;                                         // Если сдвиг длиннее массива, то сдвигаем на остаток от деления
+
+if(k < 0)
+{ 
+    Array.Reverse(array,0, -k);                              //
+    Array.Reverse(array, -k, array.Length + k);              // Сдвиг массива влево <- на к элементов
+    Array.Reverse(array, 0, array.Length);                   //
+}
+else
+{ 
+    Array.Reverse(array,0, array.Length - k);                //
+    Array.Reverse(array, array.Length -k, k);                // Сдвиг массива вправо - > на к элементов
+    Array.Reverse(array, 0, array.Length);                   //
+}
+
+Console.WriteLine($"\n[{string.Join("\t", array)}]");
