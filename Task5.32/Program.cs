@@ -5,7 +5,7 @@
 */ 
 
 void InputArray(int[] array, int minNumber = (-9), int maxNumber = 9)         // Метод заполнения массива, передаем  массив, мин и макс значения
-{                                                                             // В этой задаче есть умолчания мин -9 мах 9
+{                                                                             // В этой задаче есть умолчания
     
     for (int i = 0; i < array.Length; i++)
         array[i] = new Random().Next(minNumber, maxNumber +1); 
