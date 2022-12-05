@@ -35,7 +35,8 @@ int minNumber = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите максимальное значение элемента массива: ");
 int maxNumber = Convert.ToInt32(Console.ReadLine());
 */
-int[] array = new int[n]; InputArray(array/*, minNumber, maxNumber*/);
+int[] array = new int[n];
+InputArray(array/*, minNumber, maxNumber*/);
 
 Console.WriteLine($"\n[{string.Join("\t", array)}]");
 ReleaseArray(array);
