@@ -73,7 +73,7 @@ void InputArray(double[] array, int minNumber = (-100), int maxNumber = 100)    
         array[i] = new Random().NextDouble() * new Random().Next(minNumber,maxNumber);
 }
 
-double MinMaxSubtraction(double[] array)                                                // Метод поиска разности минимального и максимального значения
+double MaxMinSubtraction(double[] array)                                                // Метод поиска разности  максимального и минимального значения
 {
     double minNumber = array[0];
     double maxNumber = array[0];
@@ -84,7 +84,7 @@ double MinMaxSubtraction(double[] array)                                        
         if (maxNumber < array[i])
             maxNumber = array[i];
     }
-    return minNumber - maxNumber;
+    return maxNumber - minNumber;
 }
 
 Console.Clear();
@@ -96,5 +96,5 @@ double[] array = new double[n];                                                 
 
 InputArray(array);                                                                  // Заполняем массив
 
-Console.WriteLine($"\n[{string.Join("\t", array)}] -> {MinMaxSubtraction(array)}"); // Вывод ответа по форме задания
+Console.WriteLine($"\n[{string.Join("\t", array)}] -> {MaxMinSubtraction(array)}"); // Вывод ответа по форме задания
 
