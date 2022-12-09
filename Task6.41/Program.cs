@@ -12,7 +12,7 @@ int m = Convert.ToInt32(Console.ReadLine());
 
 int countPositiveNumber = 0, number = 0;
 
-string resultList = "";
+string resultList = String.Empty;
 
 for (int i = 1; i < m + 1; i++)
 {
