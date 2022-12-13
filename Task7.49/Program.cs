@@ -39,9 +39,9 @@ void ChangeMatrix(int[,] matrix, int minNumber = (-10), int maxNumber = 11 )    
     {   
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if(i > 0 && i % 2 == 1 && j > 0 && j % 2 == 1)
+            if(i % 2 == 1 && j % 2 == 1)
             {
-                matrix[i,j] = matrix[i,j] * matrix[i,j];
+                matrix[i,j] *= matrix[i,j];
             }
             else matrix[i,j] = 0;                                                   // обнулил остальные элементы, для наглядности)))
 
