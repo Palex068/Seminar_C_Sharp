@@ -55,7 +55,10 @@ BW => 2
 char[,] CreateMatrix() // Создаем двумерный массив (Пользователь вводит размер)
 {
     Console.Write("Введите размер матрицы (два числа через пробел): ");
-    int[] arrayVolume = Console.ReadLine().Split(" ").Select(s => int.Parse(s)).ToArray();  // Исключили добавление переменных
+    int[] arrayVolume = Console.ReadLine()
+                        .Split(" ")
+                        .Select(s => int.Parse(s))
+                        .ToArray();  // Исключили добавление переменных
     char[,] matrix = new char[arrayVolume[0],arrayVolume[1]];
     
     return matrix;
