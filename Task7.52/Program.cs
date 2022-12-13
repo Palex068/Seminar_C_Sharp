@@ -37,15 +37,15 @@ double[] ColumnsAverage(int[,] matrix)                              // Отда�
 {
     double[] result = new double[matrix.GetLength(1)];              // Создадим массив для вывода ответа
     
-    for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(1); i++)
     {   
         double columnSum = 0;                                       // объявим сумму элементов столбца
 
-        for (int j = 0; j < matrix.GetLength(1); j++)
+        for (int j = 0; j < matrix.GetLength(0); j++)
         {
             columnSum += matrix[j,i];
         }
-        result[i] = Math.Round(columnSum / matrix.GetLength(1), 2); // запишем среднее арифметическое в массив ответа
+        result[i] = Math.Round(columnSum / matrix.GetLength(0), 2); // запишем среднее арифметическое в массив ответа
     }
     return result;                                                  // вернём массив с ответами
 }
