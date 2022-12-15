@@ -2,10 +2,34 @@
     Задайте двумерный массив. 
     Напишите программу, которая поменяет местами первую и последнюю строку массива.
 */
-int[,] CreateMatrix() // Создаем двумерный массив (Пользователь вводит размер) // TODO написать проверку правильности ввода
+int[,] CreateMatrix() // Создаем двумерный массив (Пользователь вводит размер) // С попыткой проверки ввода)))
 {
-    Console.Write("Введите размер матрицы (два числа через пробел): "); // TODO написать проверку правильности ввода
-    int[] arrayVolume = Console.ReadLine().Split(" ").Select(s => int.Parse(s)).ToArray();  // Исключили добавление переменных
+    Console.Write("Введите размер матрицы (два числа через пробел): "); 
+    //TODO: Дописать проверку на ввод чисел а не текстовых символов
+    string input = Console.ReadLine();
+    
+    int countOfSpace = 0;      
+    for (int i = 0; i < input.Length; i++)
+    {
+        if (input[i] == ' ') 
+            countOfSpace ++;
+    }
+    
+    while (input.Length == 0 ||                 // ничего не введено
+            countOfSpace !=1 ||                 // пробелов больше одного
+            input[0] == ' '  ||                 // пробел на 0 месте
+            input[input.Length-1] == ' ')       // пробел на последнем месте            
+    {
+        Console.Write($"Вы ошиблись!\nВведите размер матрицы (два числа через пробел): ");
+        input = Console.ReadLine();        
+        countOfSpace = 0;
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (input[i] == ' ') 
+                countOfSpace ++;
+        }
+    }
+    int[] arrayVolume = input.Split(" ").Select(s => int.Parse(s)).ToArray();  // Исключили добавление переменных
     int[,] matrix = new int[arrayVolume[0],arrayVolume[1]];
     return matrix;
 }
